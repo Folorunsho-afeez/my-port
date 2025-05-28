@@ -1,0 +1,139 @@
+/* contact-style.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffefc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 15px 0 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #fff;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .contact-intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-intro h2 {
+    font-size: 2rem;
+    color: #4e342e;
+  }
+  
+  .contact-form form {
+    background-color: #fff3e0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  
+  .contact-form button {
+    background-color: #4e342e;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #3e2723;
+  }
+  
+  .contact-details {
+    margin-top: 60px;
+    background-color: #fbe9e7;
+    padding: 20px 30px;
+    border-radius: 10px;
+  }
+  
+  .contact-details h3 {
+    margin-top: 0;
+    color: #6d4c41;
+  }
+  
+  .contact-details ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+  
+  .contact-details li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-details a {
+    color: #4e342e;
+    text-decoration: none;
+  }
+  
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+  }
+  
