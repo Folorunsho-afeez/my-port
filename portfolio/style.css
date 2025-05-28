@@ -1,0 +1,218 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('images/law-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff8e1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgba(78, 52, 46, 0.85);
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1, 
+header p,
+nav ul li a {
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  animation-delay: 0.3s;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+  animation-delay: 0.8s;
+}
+
+nav ul {
+  margin: 25px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #ffc107;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #ffc107;
+}
+
+/* Animate each nav link with incremental delay */
+nav ul li:nth-child(1) a { animation-delay: 1.3s; }
+nav ul li:nth-child(2) a { animation-delay: 1.5s; }
+nav ul li:nth-child(3) a { animation-delay: 1.7s; }
+nav ul li:nth-child(4) a { animation-delay: 1.9s; }
+nav ul li:nth-child(5) a { animation-delay: 2.1s; }
+nav ul li:nth-child(6) a { animation-delay: 2.3s; }
+
+main {
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: rgba(78, 52, 46, 0.85);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  letter-spacing: 1.5px;
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 2.7s;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+  letter-spacing: 0.8px;
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 3.1s;
+}
+
+#highlights {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: 3.6s;
+}
+
+#highlights h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffc107;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+
+#highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+#highlights ul li {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+  padding-left: 30px;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 0.6s forwards;
+}
+
+/* checkmark for spotlight items */
+#highlights ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ffc107;
+  font-weight: bold;
+}
+
+/* Animate each spotlight item with incremental delay */
+#highlights ul li:nth-child(1) { animation-delay: 4.2s; }
+#highlights ul li:nth-child(2) { animation-delay: 4.6s; }
+#highlights ul li:nth-child(3) { animation-delay: 5.0s; }
+
+footer {
+  background-color: #2d2d2d;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #fff8e1;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
+}
+
+/* Fade and slide up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  main {
+    margin: 25px 15px;
+    padding: 20px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  #highlights {
+    padding: 20px;
+  }
+
+  #highlights h3 {
+    font-size: 1.6rem;
+  }
+
+  #highlights ul li {
+    font-size: 1rem;
+    padding-left: 25px;
+  }
+}
